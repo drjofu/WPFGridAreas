@@ -5,12 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfGridAreaDemo"
         mc:Ignorable="d"
-        xmlns:grid="clr-namespace:WpfGridAreaDemo"
-        Title="MainWindow" Height="450" Width="800">
-  <Window.Resources>
-    <grid:AreaRow x:Key="asdfr"></grid:AreaRow>
-  </Window.Resources>
-  <Grid>
+        Title="Grid-Areas-Demo" Height="450" Width="800">
+  
+  <Grid Margin="3,2,3,4" GridExtensions.Gap="7">
     <Grid.RowDefinitions>
       <RowDefinition Height="100*"/>
       <RowDefinition Height="100*"/>
@@ -18,28 +15,28 @@
       <RowDefinition Height="100*"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="100*"/>
+      <ColumnDefinition Width="100*" />
       <ColumnDefinition Width="100*"/>
       <ColumnDefinition Width="100*"/>
       <ColumnDefinition Width="100*"/>
     </Grid.ColumnDefinitions>
-    <grid:GridExtensions.AreaDefinitions>
-      <grid:AreaRows>
-        <grid:AreaRow>eins zwei zwei drei</grid:AreaRow>
-        <grid:AreaRow>eins zwei zwei drei</grid:AreaRow>
-        <grid:AreaRow>eins fünf fünf fünf</grid:AreaRow>
-        <grid:AreaRow>vier vier vier vier</grid:AreaRow>
-      </grid:AreaRows>
-    </grid:GridExtensions.AreaDefinitions>
+    <GridExtensions.AreaDefinitions>
+      <AreaRows>
+        <AreaRow>eins zwei zwei drei</AreaRow>
+        <AreaRow>eins zwei zwei drei</AreaRow>
+        <AreaRow>eins fünf fünf fünf</AreaRow>
+        <AreaRow>vier vier vier vier</AreaRow>
+      </AreaRows>
+    </GridExtensions.AreaDefinitions>
 
 
-    <!--<Button Content="1" grid:GridExtensions.Area="eins"/>-->
-    <Button Content="2" grid:GridExtensions.Area="zwei"/>
-    <Button Content="3" grid:GridExtensions.Area="drei"/>
-    <Button Content="4" grid:GridExtensions.Area="vier"/>
-    <Button Content="1" grid:GridExtensions.Area="eins"/>
+    <Button Content="1" GridExtensions.Area="eins" />
+    <Button Content="2" GridExtensions.Area="zwei" />
+    <Button Content="3" GridExtensions.Area="drei" />
+    <Button Content="4" GridExtensions.Area="vier" />
+    <Button Content="5" GridExtensions.Area="fünf" />
 
-    <Grid grid:GridExtensions.Area="fünf">
+    <!--<Grid GridExtensions.Area="fünf">
       <Grid.RowDefinitions>
         <RowDefinition/>
         <RowDefinition/>
@@ -49,18 +46,18 @@
         <ColumnDefinition/>
         <ColumnDefinition/>
       </Grid.ColumnDefinitions>
-      <grid:GridExtensions.AreaDefinitions>
-        <grid:AreaRows>
-          <grid:AreaRow>aaa aaa</grid:AreaRow>
-          <grid:AreaRow>bbb ccc</grid:AreaRow>
-          <grid:AreaRow>bbb ddd</grid:AreaRow>
-        </grid:AreaRows>
-      </grid:GridExtensions.AreaDefinitions>
-      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue" Content="A" grid:GridExtensions.Area="aaa"/>
-      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="B" grid:GridExtensions.Area="bbb"/>
-      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="C" grid:GridExtensions.Area="ccc"/>
-      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="D" grid:GridExtensions.Area="ddd"/>
-    </Grid>
+      <GridExtensions.AreaDefinitions>
+        <AreaRows>
+          <AreaRow>aaa aaa</AreaRow>
+          <AreaRow>bbb ccc</AreaRow>
+          <AreaRow>bbb ddd</AreaRow>
+        </AreaRows>
+      </GridExtensions.AreaDefinitions>
+      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue" Content="A" GridExtensions.Area="aaa"/>
+      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="B" GridExtensions.Area="bbb"/>
+      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="C" GridExtensions.Area="ccc"/>
+      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="D" GridExtensions.Area="ddd"/>
+    </Grid>-->
   </Grid>
 
 </Window>

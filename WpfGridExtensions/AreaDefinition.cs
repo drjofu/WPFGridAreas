@@ -1,4 +1,5 @@
-﻿namespace WpfGridAreaDemo
+﻿namespace WpfGridExtensions
+
 {
   internal class AreaDefinition
   {
@@ -6,6 +7,5 @@
     public int Column { get; set; }
     public int RowSpan { get; set; }
     public int ColumnSpan { get; set; }
-
   }
 }
