@@ -1,0 +1,66 @@
+﻿<Window x:Class="WpfGridAreaDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGridAreaDemo"
+        mc:Ignorable="d"
+        xmlns:grid="clr-namespace:WpfGridAreaDemo"
+        Title="MainWindow" Height="450" Width="800">
+  <Window.Resources>
+    <grid:AreaRow x:Key="asdfr"></grid:AreaRow>
+  </Window.Resources>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="100*"/>
+      <RowDefinition Height="100*"/>
+      <RowDefinition Height="100*"/>
+      <RowDefinition Height="100*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="100*"/>
+      <ColumnDefinition Width="100*"/>
+      <ColumnDefinition Width="100*"/>
+      <ColumnDefinition Width="100*"/>
+    </Grid.ColumnDefinitions>
+    <grid:GridExtensions.AreaDefinitions>
+      <grid:AreaRows>
+        <grid:AreaRow>eins zwei zwei drei</grid:AreaRow>
+        <grid:AreaRow>eins zwei zwei drei</grid:AreaRow>
+        <grid:AreaRow>eins fünf fünf fünf</grid:AreaRow>
+        <grid:AreaRow>vier vier vier vier</grid:AreaRow>
+      </grid:AreaRows>
+    </grid:GridExtensions.AreaDefinitions>
+
+
+    <!--<Button Content="1" grid:GridExtensions.Area="eins"/>-->
+    <Button Content="2" grid:GridExtensions.Area="zwei"/>
+    <Button Content="3" grid:GridExtensions.Area="drei"/>
+    <Button Content="4" grid:GridExtensions.Area="vier"/>
+    <Button Content="1" grid:GridExtensions.Area="eins"/>
+
+    <Grid grid:GridExtensions.Area="fünf">
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <grid:GridExtensions.AreaDefinitions>
+        <grid:AreaRows>
+          <grid:AreaRow>aaa aaa</grid:AreaRow>
+          <grid:AreaRow>bbb ccc</grid:AreaRow>
+          <grid:AreaRow>bbb ddd</grid:AreaRow>
+        </grid:AreaRows>
+      </grid:GridExtensions.AreaDefinitions>
+      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue" Content="A" grid:GridExtensions.Area="aaa"/>
+      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="B" grid:GridExtensions.Area="bbb"/>
+      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="C" grid:GridExtensions.Area="ccc"/>
+      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="D" grid:GridExtensions.Area="ddd"/>
+    </Grid>
+  </Grid>
+
+</Window>
