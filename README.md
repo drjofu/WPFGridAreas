@@ -1,6 +1,6 @@
 # WPF Grid Areas
 
-Implementation of CSS-like Grid Area Definitions in WPF
+Implementation of CSS-like grid area definitions in WPF
 
 Usage example:
 ```
