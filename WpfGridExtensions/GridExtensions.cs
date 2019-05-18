@@ -156,6 +156,7 @@ namespace WpfGridExtensions
     private static void Grid_Initialized(object sender, EventArgs e)
     {
       var grid = sender as Grid;
+      grid.Initialized -= Grid_Initialized;
       var margin = GetGap(grid);
       foreach (FrameworkElement item in grid.Children)
       {

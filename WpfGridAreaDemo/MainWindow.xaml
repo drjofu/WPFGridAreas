@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Grid-Areas-Demo" Height="450" Width="800">
   
-  <Grid Margin="3,2,3,4" GridExtensions.Gap="7">
+  <Grid Margin="7" GridExtensions.Gap="7">
     <Grid.RowDefinitions>
       <RowDefinition Height="100*"/>
       <RowDefinition Height="100*"/>
@@ -34,9 +34,9 @@
     <Button Content="2" GridExtensions.Area="zwei" />
     <Button Content="3" GridExtensions.Area="drei" />
     <Button Content="4" GridExtensions.Area="vier" />
-    <Button Content="5" GridExtensions.Area="fünf" />
+    <!--<Button Content="5" GridExtensions.Area="fünf" />-->
 
-    <!--<Grid GridExtensions.Area="fünf">
+    <Grid GridExtensions.Area="fünf" GridExtensions.Gap="3">
       <Grid.RowDefinitions>
         <RowDefinition/>
         <RowDefinition/>
@@ -53,11 +53,11 @@
           <AreaRow>bbb ddd</AreaRow>
         </AreaRows>
       </GridExtensions.AreaDefinitions>
-      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue" Content="A" GridExtensions.Area="aaa"/>
-      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="B" GridExtensions.Area="bbb"/>
-      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="C" GridExtensions.Area="ccc"/>
-      <Label Background="LightGoldenrodYellow" Margin="3" BorderThickness="2" BorderBrush="Blue"  Content="D" GridExtensions.Area="ddd"/>
-    </Grid>-->
+      <Label  Content="A" GridExtensions.Area="aaa" Background="LightGoldenrodYellow"  BorderThickness="2" BorderBrush="Blue" />
+      <Label  Content="B" GridExtensions.Area="bbb" Background="LightGoldenrodYellow"  BorderThickness="2" BorderBrush="Blue" />
+      <Label  Content="C" GridExtensions.Area="ccc" Background="LightGoldenrodYellow"  BorderThickness="2" BorderBrush="Blue" />
+      <Label  Content="D" GridExtensions.Area="ddd" Background="LightGoldenrodYellow"  BorderThickness="2" BorderBrush="Blue" />
+    </Grid>
   </Grid>
 
 </Window>
