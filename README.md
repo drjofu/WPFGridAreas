@@ -39,4 +39,4 @@ Usage example:
 
 Results in
 
-!(https://raw.githubusercontent.com/drjofu/WPFGridAreas/master/Bild1.png "Grid template areas in WPF grid")
+![Grid areas](https://raw.githubusercontent.com/drjofu/WPFGridAreas/master/Bild1.png "Grid template areas in WPF grid")
