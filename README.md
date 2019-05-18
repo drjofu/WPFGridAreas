@@ -3,6 +3,7 @@
 Implementation of CSS-like Grid Area Definitions in WPF
 
 Usage example:
+```
  <Grid Margin="7" GridExtensions.Gap="7">
     <Grid.RowDefinitions>
       <RowDefinition Height="100*"/>
@@ -34,3 +35,4 @@ Usage example:
     <Button Content="5" GridExtensions.Area="fünf" />
 
   </Grid>
+```
