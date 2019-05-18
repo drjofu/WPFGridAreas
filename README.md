@@ -36,3 +36,7 @@ Usage example:
 
   </Grid>
 ```
+
+Results in
+
+!(https://raw.githubusercontent.com/drjofu/WPFGridAreas/master/Bild1.png "Grid template areas in WPF grid")
